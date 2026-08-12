@@ -22,16 +22,24 @@
       "extension": "md",
       "language": "markdown",
       "parseStatus": "unsupported",
-      "path": "README.md",
-      "sha256": "33c0d4a58284ebcac0bae0b2f300e9e726919bf2638c707b31652c3a7d7e2179",
-      "size": 465
+      "path": "docs/functional-design/2026-08-12-functional-design-gestor-recetas-cocina-red-social-de-recetas.md",
+      "sha256": "19e8050ee821e237e25d0861137e80f1981771349dfd87b076671e3d0ff45c98",
+      "size": 20617
+    },
+    {
+      "category": "documentation",
+      "extension": "pdf",
+      "parseStatus": "unsupported",
+      "path": "docs/functional-design/2026-08-12-functional-design-gestor-recetas-cocina-red-social-de-recetas.pdf",
+      "sha256": "581c510788e2e11924cf23dd42e02d21f7a06da81eba25c7d0cc65847ca6bb0a",
+      "size": 46255
     }
   ],
   "modules": [],
   "project": {
     "name": "Gestor Recetas Cocina",
-    "summary": "Aplicación para gestionar recetas de cocina: ingredientes, pasos, tiempos y organización personal.",
-    "summarySource": "readme"
+    "summary": "Proyecto Gestor Recetas Cocina, con 3 archivos indexados.",
+    "summarySource": "structure"
   },
   "scannerVersion": "1.2.0",
   "schemaVersion": "1.0",
@@ -44,6 +52,6 @@
     },
     "schemaVersion": "1.0"
   },
-  "snapshotId": "b906457efd76fc63763a28130055edee2fa2491d5ba39420299598e9374fc82a",
+  "snapshotId": "38d3bab06e4ecdddbb960bc997fd02e7baccf2fa52267298c77248b53e532690",
   "technologies": []
 }

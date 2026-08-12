@@ -6,14 +6,14 @@
 ## Project
 
 - Name: Gestor Recetas Cocina
-- Snapshot: b906457efd76fc63763a28130055edee2fa2491d5ba39420299598e9374fc82a
+- Snapshot: 38d3bab06e4ecdddbb960bc997fd02e7baccf2fa52267298c77248b53e532690
 - Scanner: 1.2.0
 
 ## Summary
 
-Aplicación para gestionar recetas de cocina: ingredientes, pasos, tiempos y organización personal.
+Proyecto Gestor Recetas Cocina, con 3 archivos indexados.
 
-- Source: root README
+- Source: detected project structure
 
 ## Technology
 
@@ -39,7 +39,7 @@ Aplicación para gestionar recetas de cocina: ingredientes, pasos, tiempos y org
 
 ## Index Statistics
 
-- Files: 2
+- Files: 3
 - Source files: 0
 - Tests: 0
 - Symbols: 0
