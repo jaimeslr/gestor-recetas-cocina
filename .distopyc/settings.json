@@ -1,0 +1,9 @@
+{
+  "exclude": [],
+  "include": [],
+  "indexing": {
+    "maxFileSizeBytes": 2097152,
+    "respectGitIgnore": true
+  },
+  "schemaVersion": "1.0"
+}

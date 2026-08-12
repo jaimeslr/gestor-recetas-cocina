@@ -1,0 +1,49 @@
+{
+  "applications": [],
+  "diagnosticsSummary": {
+    "errors": 0,
+    "info": 0,
+    "omittedFiles": 0,
+    "parseFailures": 0,
+    "warnings": 0
+  },
+  "entryPoints": [],
+  "files": [
+    {
+      "category": "unknown",
+      "extension": "",
+      "parseStatus": "unsupported",
+      "path": ".gitignore",
+      "sha256": "e1029e14de22fbda78e70c5c63620e2879c2526552c378a6e4a4b8e0e6104565",
+      "size": 298
+    },
+    {
+      "category": "documentation",
+      "extension": "md",
+      "language": "markdown",
+      "parseStatus": "unsupported",
+      "path": "README.md",
+      "sha256": "33c0d4a58284ebcac0bae0b2f300e9e726919bf2638c707b31652c3a7d7e2179",
+      "size": 465
+    }
+  ],
+  "modules": [],
+  "project": {
+    "name": "Gestor Recetas Cocina",
+    "summary": "Aplicación para gestionar recetas de cocina: ingredientes, pasos, tiempos y organización personal.",
+    "summarySource": "readme"
+  },
+  "scannerVersion": "1.2.0",
+  "schemaVersion": "1.0",
+  "settings": {
+    "exclude": [],
+    "include": [],
+    "indexing": {
+      "maxFileSizeBytes": 2097152,
+      "respectGitIgnore": true
+    },
+    "schemaVersion": "1.0"
+  },
+  "snapshotId": "b906457efd76fc63763a28130055edee2fa2491d5ba39420299598e9374fc82a",
+  "technologies": []
+}
