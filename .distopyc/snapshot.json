@@ -18,27 +18,279 @@
       "size": 298
     },
     {
+      "category": "unknown",
+      "extension": "json",
+      "language": "json",
+      "parseStatus": "unsupported",
+      "path": "backend/package-lock.json",
+      "sha256": "00c37294e0c18344a320136feb22377bfe96148a78f25a9ccb51b1c0ed08984a",
+      "size": 36897
+    },
+    {
+      "category": "configuration",
+      "extension": "json",
+      "language": "json",
+      "parseStatus": "unsupported",
+      "path": "backend/package.json",
+      "sha256": "40a294e95fa3c580d4faf63c446264fd80b5ad674165960d21d36eacf9199313",
+      "size": 388
+    },
+    {
+      "category": "source",
+      "extension": "js",
+      "language": "javascript",
+      "parseStatus": "parsed",
+      "path": "backend/src/auth.js",
+      "sha256": "c556187d1d8938ba7db36d33d29a2d9d98a464720c4852250b7bb028a857a6c9",
+      "size": 2333
+    },
+    {
+      "category": "source",
+      "extension": "js",
+      "language": "javascript",
+      "parseStatus": "parsed",
+      "path": "backend/src/db.js",
+      "sha256": "ccc41a1a14d5638cd7e010d999856e78ef76be239be9ac008be7670e3bdad4af",
+      "size": 9743
+    },
+    {
+      "category": "source",
+      "extension": "js",
+      "language": "javascript",
+      "parseStatus": "parsed",
+      "path": "backend/src/errors.js",
+      "sha256": "9ecb63cbcd44bd4f3d443b2cbce061e3f9b2ff78ea894e592aa43b6e0754d78e",
+      "size": 747
+    },
+    {
+      "category": "source",
+      "extension": "js",
+      "language": "javascript",
+      "parseStatus": "parsed",
+      "path": "backend/src/routes/auth.js",
+      "sha256": "64d66bb6677b1924b3b47d872757269ad535b163ea01434c8450b69400f04ba4",
+      "size": 6500
+    },
+    {
+      "category": "source",
+      "extension": "js",
+      "language": "javascript",
+      "parseStatus": "parsed",
+      "path": "backend/src/routes/feed.js",
+      "sha256": "b75dc1f25507a98d8ef17b3ba85dbfb6ecf81d2b6ce818e1a94d8e1c72db7326",
+      "size": 8523
+    },
+    {
+      "category": "source",
+      "extension": "js",
+      "language": "javascript",
+      "parseStatus": "parsed",
+      "path": "backend/src/routes/planning.js",
+      "sha256": "bd894f1fb76cde1c2ffb9a4f1d98919db26b38e92854fc9274d7fd194b3e64ad",
+      "size": 3592
+    },
+    {
+      "category": "source",
+      "extension": "js",
+      "language": "javascript",
+      "parseStatus": "parsed",
+      "path": "backend/src/routes/recipeSerialiser.js",
+      "sha256": "a55cb59b3c2eb7af3e1193d51426e80c43f341df858eda00cd6be06fbe57009e",
+      "size": 1702
+    },
+    {
+      "category": "source",
+      "extension": "js",
+      "language": "javascript",
+      "parseStatus": "parsed",
+      "path": "backend/src/routes/recipes.js",
+      "sha256": "1836e644140fbbb78814794fbae64cd77b81cd845bc053ae66303daf82f91abf",
+      "size": 4538
+    },
+    {
+      "category": "source",
+      "extension": "js",
+      "language": "javascript",
+      "parseStatus": "parsed",
+      "path": "backend/src/seed.js",
+      "sha256": "3753b768a560361990fe6932f29aba97e34edb97bc398b70588deb099d23a073",
+      "size": 12542
+    },
+    {
+      "category": "source",
+      "extension": "js",
+      "language": "javascript",
+      "parseStatus": "parsed",
+      "path": "backend/src/server.js",
+      "sha256": "7ec5e25391ed3c963050c5479981f1456f91915ab840fad4ed8b8477f350f0e3",
+      "size": 2303
+    },
+    {
+      "category": "source",
+      "extension": "js",
+      "language": "javascript",
+      "parseStatus": "parsed",
+      "path": "backend/src/shoppingList.js",
+      "sha256": "986264e25ab757019a6aaf033cb654634af1d8f189ab13467ce25a2aef2905ae",
+      "size": 2402
+    },
+    {
+      "category": "source",
+      "extension": "js",
+      "language": "javascript",
+      "parseStatus": "parsed",
+      "path": "backend/src/validators.js",
+      "sha256": "1e8c5249a8ac92cd6075ef559022c8d32cef8c2490ad793ca87e0973ef8a0179",
+      "size": 6089
+    },
+    {
+      "category": "source",
+      "extension": "js",
+      "language": "javascript",
+      "parseStatus": "parsed",
+      "path": "backend/src/vocabularies.js",
+      "sha256": "b542326857e304ab210c1240d60ada1ce95ae46ba6f8db73f65c0b8f3572da0b",
+      "size": 2222
+    },
+    {
       "category": "documentation",
       "extension": "md",
       "language": "markdown",
       "parseStatus": "unsupported",
-      "path": "docs/functional-design/2026-08-12-functional-design-gestor-recetas-cocina-red-social-de-recetas.md",
-      "sha256": "19e8050ee821e237e25d0861137e80f1981771349dfd87b076671e3d0ff45c98",
-      "size": 20617
+      "path": "docs/functional-design/2026-08-13-red-social-de-recetas-diseno-funcional.md",
+      "sha256": "ae6965b6b90a73b9915a379343a646cf8df0a061a04d5af9108a7596cea767e7",
+      "size": 28109
     },
     {
       "category": "documentation",
       "extension": "pdf",
       "parseStatus": "unsupported",
-      "path": "docs/functional-design/2026-08-12-functional-design-gestor-recetas-cocina-red-social-de-recetas.pdf",
-      "sha256": "581c510788e2e11924cf23dd42e02d21f7a06da81eba25c7d0cc65847ca6bb0a",
-      "size": 46255
+      "path": "docs/functional-design/2026-08-13-red-social-de-recetas-diseno-funcional.pdf",
+      "sha256": "766f9df6266360130f3831473a8bf9f1a70c5eb024c8bdcbf9ed0e361e037382",
+      "size": 66868
+    },
+    {
+      "category": "documentation",
+      "extension": "md",
+      "language": "markdown",
+      "parseStatus": "unsupported",
+      "path": "docs/session-minutes/2026-08-13-red-social-de-recetas-f6fcbfac.md",
+      "sha256": "ba9162a9a9bf3144ee2082196957bbdb94adc9262e590b5d088db777cc9c9687",
+      "size": 7055
+    },
+    {
+      "category": "documentation",
+      "extension": "md",
+      "language": "markdown",
+      "parseStatus": "unsupported",
+      "path": "docs/technical-design/2026-08-13-red-social-de-recetas-diseno-tecnico.md",
+      "sha256": "8f9666ba2601bdfa24a9ae71283e6b58481ec0883580a3fe7a70597021226e3a",
+      "size": 28957
+    },
+    {
+      "category": "source",
+      "extension": "js",
+      "language": "javascript",
+      "parseStatus": "parsed",
+      "path": "frontend/app.js",
+      "sha256": "8841ac8bcdac37cfc0728e593dd83b674b395a77dfb2385ae86ad47269200392",
+      "size": 6810
+    },
+    {
+      "category": "source",
+      "extension": "html",
+      "language": "html",
+      "parseStatus": "parsed",
+      "path": "frontend/index.html",
+      "sha256": "4feb8475ac9432fb2a5279e6b73a9273382b6d0ab307a64cf7c12412d02e1658",
+      "size": 1209
+    },
+    {
+      "category": "source",
+      "extension": "css",
+      "language": "css",
+      "parseStatus": "parsed",
+      "path": "frontend/styles.css",
+      "sha256": "2e6e7fe142d204d2d1379c1e43a153842b935a414343d6db45185e06942ba279",
+      "size": 11411
+    },
+    {
+      "category": "source",
+      "extension": "js",
+      "language": "javascript",
+      "parseStatus": "parsed",
+      "path": "frontend/views/auth.js",
+      "sha256": "6677100546c46182433a896535ed0f03f65af7d481042fad0f72a86c14c8bc73",
+      "size": 3602
+    },
+    {
+      "category": "source",
+      "extension": "js",
+      "language": "javascript",
+      "parseStatus": "parsed",
+      "path": "frontend/views/createRecipe.js",
+      "sha256": "4b8a588f0456cfaf03acbbd3f6f6137891281b9bf7c7ea80c007707860bba99d",
+      "size": 15719
+    },
+    {
+      "category": "source",
+      "extension": "js",
+      "language": "javascript",
+      "parseStatus": "parsed",
+      "path": "frontend/views/feed.js",
+      "sha256": "8fe2b2333b26195b461743fdc9b12229deb0843f82fc15764b37fd0f0130580a",
+      "size": 4351
+    },
+    {
+      "category": "source",
+      "extension": "js",
+      "language": "javascript",
+      "parseStatus": "parsed",
+      "path": "frontend/views/profile.js",
+      "sha256": "01ab930acfee4c81b64a2e5027475e6623cee95e60edb625965ce2676d1fe521",
+      "size": 12840
+    },
+    {
+      "category": "source",
+      "extension": "js",
+      "language": "javascript",
+      "parseStatus": "parsed",
+      "path": "frontend/views/recipe.js",
+      "sha256": "5c4c7996430efcf0fd19c848d24efddf91d5aab217e809d66ff40329a59956bd",
+      "size": 11743
+    },
+    {
+      "category": "source",
+      "extension": "js",
+      "language": "javascript",
+      "parseStatus": "parsed",
+      "path": "frontend/views/search.js",
+      "sha256": "21df773ad309f61676a3b1f2d286e1edebd8e41ea6171de7d5f3eb250955fd3e",
+      "size": 8746
+    },
+    {
+      "category": "source",
+      "extension": "js",
+      "language": "javascript",
+      "parseStatus": "parsed",
+      "path": "frontend/views/shopping.js",
+      "sha256": "c98101a2af3c5d4968905bc7d0922ba04d2d104e2e43a2ea63c058328785ffa3",
+      "size": 6211
+    },
+    {
+      "category": "source",
+      "extension": "js",
+      "language": "javascript",
+      "parseStatus": "parsed",
+      "path": "frontend/views/week.js",
+      "sha256": "5b7bc3d274f6b0d405390c663b9f815c3451d93bf0ca86cb28492ef662ab36ef",
+      "size": 9866
     }
   ],
   "modules": [],
   "project": {
     "name": "Gestor Recetas Cocina",
-    "summary": "Proyecto Gestor Recetas Cocina, con 3 archivos indexados.",
+    "summary": "Proyecto Gestor Recetas Cocina basado en Express, npm, con 31 archivos indexados.",
     "summarySource": "structure"
   },
   "scannerVersion": "1.2.0",
@@ -52,6 +304,21 @@
     },
     "schemaVersion": "1.0"
   },
-  "snapshotId": "38d3bab06e4ecdddbb960bc997fd02e7baccf2fa52267298c77248b53e532690",
-  "technologies": []
+  "snapshotId": "dfa94f0a1e7111bd748169c68ad5c507c9ab12361ac88196c74af71f8e6490d7",
+  "technologies": [
+    {
+      "evidence": [
+        "backend/package.json dependency express"
+      ],
+      "id": "express",
+      "name": "Express"
+    },
+    {
+      "evidence": [
+        "backend/package-lock.json exists"
+      ],
+      "id": "npm",
+      "name": "npm"
+    }
+  ]
 }

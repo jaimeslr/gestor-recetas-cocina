@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recetas — Red social de cocina</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <a class="brand" href="#/">Recetas</a>
+        <nav class="topnav">
+          <a href="#/" data-nav="home">Inicio</a>
+          <a href="#/search" data-nav="search">Buscar</a>
+          <a href="#/create" data-nav="create" id="nav-create" hidden>Crear</a>
+          <a href="#/week" data-nav="week">Mi semana</a>
+          <a href="#/shopping" data-nav="shopping">Lista de compra</a>
+        </nav>
+        <div class="session" id="session"></div>
+      </header>
+      <main id="view"></main>
+    </div>
+    <template id="tpl-card-recipe">
+      <article class="card" data-id="">
+        <img alt="" loading="lazy" />
+        <div class="card-body">
+          <h3></h3>
+          <p class="meta"></p>
+          <p class="desc"></p>
+          <div class="tags"></div>
+        </div>
+      </article>
+    </template>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
