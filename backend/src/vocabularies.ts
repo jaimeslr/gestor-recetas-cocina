@@ -1,8 +1,18 @@
 // Vocabularios cerrados: alérgenos (UE 1169/2011) y dietas canónicas.
 // Cualquier valor entrante se valida contra esta lista; valores fuera se rechazan
 // con 422 UnknownAllergen / UnknownDiet para preservar la invariante CA-03.
+import type {
+  Allergen,
+  Category,
+  Day,
+  Diet,
+  Difficulty,
+  MealSlot,
+  NormalizableUnit,
+  Unit,
+} from './types/domain.js';
 
-export const ALLERGENS = [
+export const ALLERGENS: Allergen[] = [
   { id: 'gluten', name: 'Gluten' },
   { id: 'crustaceos', name: 'Crustáceos' },
   { id: 'huevos', name: 'Huevos' },
@@ -19,7 +29,7 @@ export const ALLERGENS = [
   { id: 'altramuces', name: 'Altramuces' },
 ];
 
-export const DIETS = [
+export const DIETS: Diet[] = [
   { id: 'vegetariana', name: 'Vegetariana' },
   { id: 'vegana', name: 'Vegana' },
   { id: 'sin_gluten', name: 'Sin gluten' },
@@ -32,7 +42,7 @@ export const DIETS = [
   { id: 'kosher', name: 'Kosher' },
 ];
 
-export const CATEGORIES = [
+export const CATEGORIES: Category[] = [
   'desayuno',
   'comida',
   'cena',
@@ -44,15 +54,26 @@ export const CATEGORIES = [
   'panaderia',
 ];
 
-export const DIFFICULTIES = ['facil', 'media', 'dificil'];
+export const DIFFICULTIES: Difficulty[] = ['facil', 'media', 'dificil'];
 
-export const MEAL_SLOTS = ['desayuno', 'comida', 'cena', 'snack'];
-export const DAYS = ['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo'];
+export const MEAL_SLOTS: MealSlot[] = ['desayuno', 'comida', 'cena', 'snack'];
+export const DAYS: Day[] = ['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo'];
 
-export const UNITS = ['g', 'kg', 'ml', 'l', 'ud', 'cdita', 'cdta', 'taza', 'pizca', 'diente', 'rebanada'];
+export const UNITS: Unit[] = [
+  'g',
+  'kg',
+  'ml',
+  'l',
+  'ud',
+  'cdita',
+  'cdta',
+  'taza',
+  'pizca',
+  'diente',
+  'rebanada',
+];
 
-// Unidades que se normalizan a una base SI (g, ml, ud). El resto se agrupa por texto.
-export const NORMALIZABLE_UNITS = {
+export const NORMALIZABLE_UNITS: Record<string, NormalizableUnit> = {
   g: { base: 'g', factor: 1 },
   kg: { base: 'g', factor: 1000 },
   ml: { base: 'ml', factor: 1 },
@@ -60,10 +81,10 @@ export const NORMALIZABLE_UNITS = {
   ud: { base: 'ud', factor: 1 },
 };
 
-export function findAllergen(id) {
-  return ALLERGENS.find((a) => a.id === id) || null;
+export function findAllergen(id: string): Allergen | null {
+  return ALLERGENS.find((a) => a.id === id) ?? null;
 }
 
-export function findDiet(id) {
-  return DIETS.find((d) => d.id === id) || null;
+export function findDiet(id: string): Diet | null {
+  return DIETS.find((d) => d.id === id) ?? null;
 }

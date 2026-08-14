@@ -1,19 +1,21 @@
 import { store } from '../db.js';
+import type { Recipe } from '../types/domain.js';
+import type { RecipeFull } from '../types/api.js';
 
-export function serialiseRecipeFull(recipe, viewerId) {
+export function serialiseRecipeFull(recipe: Recipe, viewerId: string | null | undefined): RecipeFull {
   const author = store.getUser(recipe.authorId);
   const isFollowing = viewerId
     ? store.isFollowing({ followerId: viewerId, followedId: recipe.authorId })
     : false;
   const userRating = viewerId
-    ? store.getRating({ userId: viewerId, recipeId: recipe.id })?.stars || null
+    ? store.getRating({ userId: viewerId, recipeId: recipe.id })?.stars ?? null
     : null;
   const saves = viewerId
     ? store.listSavesForUser(viewerId).filter((s) => s.recipeId === recipe.id)
     : [];
   const collections = saves
     .map((s) => store.getCollection(s.collectionId))
-    .filter(Boolean);
+    .filter((c): c is NonNullable<typeof c> => c !== null);
   const comments = store.listComments(recipe.id);
   return {
     id: recipe.id,

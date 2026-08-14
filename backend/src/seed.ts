@@ -1,7 +1,36 @@
 import { store } from './db.js';
 import { hashPassword } from './auth.js';
 
-const SAMPLE_RECIPES = [
+interface SampleUser {
+  email: string;
+  publicName: string;
+  bio: string;
+  avatarColor: string;
+  password: string;
+}
+
+interface SampleIngredient {
+  name: string;
+  quantity: number;
+  unit: string;
+}
+
+interface SampleRecipe {
+  title: string;
+  description: string;
+  imagePrompt: string;
+  category: string;
+  prepMinutes: number;
+  cookMinutes: number;
+  servings: number;
+  difficulty: string;
+  diets: string[];
+  allergens: string[];
+  ingredients: SampleIngredient[];
+  steps: string[];
+}
+
+const SAMPLE_RECIPES: SampleRecipe[] = [
   {
     title: 'Tortilla de patatas clásica',
     description: 'Tortilla española esponjosa con cebolla caramelizada.',
@@ -292,7 +321,7 @@ const SAMPLE_RECIPES = [
   },
 ];
 
-const SAMPLE_USERS = [
+const SAMPLE_USERS: SampleUser[] = [
   {
     email: 'lucia@example.com',
     publicName: 'Lucía',
@@ -316,7 +345,7 @@ const SAMPLE_USERS = [
   },
 ];
 
-export function seedIfEmpty() {
+export function seedIfEmpty(): void {
   if (store.listRecipes().length > 0) return;
   const users = SAMPLE_USERS.map((sample) => {
     const user = store.createUser({
@@ -331,7 +360,6 @@ export function seedIfEmpty() {
     return user;
   });
 
-  // Relaciones: Lucía sigue a Iván y a Ana; Iván sigue a Lucía.
   store.follow({ followerId: users[0].id, followedId: users[1].id });
   store.follow({ followerId: users[0].id, followedId: users[2].id });
   store.follow({ followerId: users[1].id, followedId: users[0].id });
@@ -339,14 +367,28 @@ export function seedIfEmpty() {
   SAMPLE_RECIPES.forEach((recipe, idx) => {
     const author = users[idx % users.length];
     store.createRecipe({
-      ...recipe,
+      title: recipe.title,
+      description: recipe.description,
+      imagePrompt: recipe.imagePrompt,
+      category: recipe.category as never,
+      prepMinutes: recipe.prepMinutes,
+      cookMinutes: recipe.cookMinutes,
+      servings: recipe.servings,
+      difficulty: recipe.difficulty as never,
+      diets: recipe.diets,
+      allergens: recipe.allergens,
+      ingredients: recipe.ingredients.map((i) => ({
+        name: i.name,
+        quantity: i.quantity,
+        unit: i.unit as never,
+      })),
+      steps: recipe.steps.map((text, order) => ({ order: order + 1, text })),
       authorId: author.id,
     });
   });
 
-  // Valoraciones de muestra para destacar recetas top.
   const recipes = store.listRecipes();
-  const someone = (i) => users[i % users.length];
+  const someone = (i: number) => users[i % users.length];
   store.setRating({ userId: someone(1).id, recipeId: recipes[0].id, stars: 5 });
   store.setRating({ userId: someone(2).id, recipeId: recipes[0].id, stars: 4 });
   store.setRating({ userId: someone(0).id, recipeId: recipes[3].id, stars: 5 });
@@ -356,7 +398,14 @@ export function seedIfEmpty() {
   store.setRating({ userId: someone(1).id, recipeId: recipes[7].id, stars: 5 });
   store.setRating({ userId: someone(2).id, recipeId: recipes[7].id, stars: 4 });
 
-  // Guardados de muestra.
-  store.saveRecipe({ userId: someone(0).id, recipeId: recipes[1].id, collectionId: store.listCollections(someone(0).id)[0].id });
-  store.saveRecipe({ userId: someone(1).id, recipeId: recipes[0].id, collectionId: store.listCollections(someone(1).id)[0].id });
+  store.saveRecipe({
+    userId: someone(0).id,
+    recipeId: recipes[1].id,
+    collectionId: store.listCollections(someone(0).id)[0].id,
+  });
+  store.saveRecipe({
+    userId: someone(1).id,
+    recipeId: recipes[0].id,
+    collectionId: store.listCollections(someone(1).id)[0].id,
+  });
 }

@@ -1,18 +1,24 @@
 import { NORMALIZABLE_UNITS, UNITS } from './vocabularies.js';
+import type { Plan, Recipe } from './types/domain.js';
+import type { ShoppingItem } from './types/api.js';
 
-function normalizeKey(name) {
+function normalizeKey(name: string): string {
   return name.trim().toLowerCase();
 }
 
-function getBaseUnit(unit) {
-  return NORMALIZABLE_UNITS[unit]?.base || null;
+function getBaseUnit(unit: string): string | null {
+  return NORMALIZABLE_UNITS[unit]?.base ?? null;
 }
 
-export function consolidateShoppingList(plan, recipes) {
-  // Agrupa ingredientes por nombre normalizado respetando:
-  //  - unidades normalizables (g, kg -> g; ml, l -> ml; ud) se suman;
-  //  - el resto (pizca, diente, taza, cdita, cdta, rebanada) se agrupa por texto.
-  const grouped = new Map();
+export function consolidateShoppingList(plan: Plan, recipes: Map<string, Recipe>): ShoppingItem[] {
+  const grouped = new Map<
+    string,
+    {
+      name: string;
+      base: string;
+      entries: Array<{ quantity: number; unit: string }>;
+    }
+  >();
 
   for (const entry of plan.entries) {
     const recipe = recipes.get(entry.recipeId);
@@ -25,7 +31,7 @@ export function consolidateShoppingList(plan, recipes) {
       if (!grouped.has(key)) {
         grouped.set(key, { name: ing.name, base: 'texto', entries: [] });
       }
-      const bucket = grouped.get(key);
+      const bucket = grouped.get(key)!;
       if (base) {
         if (bucket.base === 'texto') bucket.entries = [];
         bucket.base = base;
@@ -34,15 +40,14 @@ export function consolidateShoppingList(plan, recipes) {
     }
   }
 
-  const items = [];
+  const items: ShoppingItem[] = [];
   for (const bucket of grouped.values()) {
     if (bucket.base === 'texto') {
-      const textBuckets = new Map();
+      const textBuckets = new Map<string, { quantity: number; unit: string }>();
       for (const e of bucket.entries) {
-        const k = e.unit;
-        const prev = textBuckets.get(k) || { quantity: 0, unit: e.unit };
+        const prev = textBuckets.get(e.unit) ?? { quantity: 0, unit: e.unit };
         prev.quantity += e.quantity;
-        textBuckets.set(k, prev);
+        textBuckets.set(e.unit, prev);
       }
       for (const value of textBuckets.values()) {
         items.push({
@@ -57,7 +62,7 @@ export function consolidateShoppingList(plan, recipes) {
       for (const e of bucket.entries) {
         const norm = NORMALIZABLE_UNITS[e.unit];
         if (!norm) continue;
-        total += e.quantity * (norm.factor || 1) / (NORMALIZABLE_UNITS[bucket.base]?.factor || 1);
+        total += (e.quantity * (norm.factor ?? 1)) / (NORMALIZABLE_UNITS[bucket.base]?.factor ?? 1);
       }
       items.push({
         name: bucket.name,
@@ -72,6 +77,6 @@ export function consolidateShoppingList(plan, recipes) {
   return items;
 }
 
-export function listUnits() {
+export function listUnits(): string[] {
   return UNITS;
 }

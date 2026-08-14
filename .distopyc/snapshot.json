@@ -23,8 +23,8 @@
       "language": "json",
       "parseStatus": "unsupported",
       "path": "backend/package-lock.json",
-      "sha256": "00c37294e0c18344a320136feb22377bfe96148a78f25a9ccb51b1c0ed08984a",
-      "size": 36897
+      "sha256": "4a9b2eee177b75520886a631dc5ef968cde74fe64f6a7c3de53323d828ee9ff2",
+      "size": 58422
     },
     {
       "category": "configuration",
@@ -32,125 +32,152 @@
       "language": "json",
       "parseStatus": "unsupported",
       "path": "backend/package.json",
-      "sha256": "40a294e95fa3c580d4faf63c446264fd80b5ad674165960d21d36eacf9199313",
-      "size": 388
+      "sha256": "06f44b45bed8eadd64c9b44dee25a9db9d7ac14e207ce3f439eca3549ec19278",
+      "size": 750
     },
     {
       "category": "source",
-      "extension": "js",
-      "language": "javascript",
+      "extension": "ts",
+      "language": "typescript",
       "parseStatus": "parsed",
-      "path": "backend/src/auth.js",
-      "sha256": "c556187d1d8938ba7db36d33d29a2d9d98a464720c4852250b7bb028a857a6c9",
-      "size": 2333
+      "path": "backend/src/auth.ts",
+      "sha256": "262c6f8d815c1b9eb0e8d2af3e97f003de484c90cb5b98f2e25806408d4046bd",
+      "size": 3333
     },
     {
       "category": "source",
-      "extension": "js",
-      "language": "javascript",
+      "extension": "ts",
+      "language": "typescript",
       "parseStatus": "parsed",
-      "path": "backend/src/db.js",
-      "sha256": "ccc41a1a14d5638cd7e010d999856e78ef76be239be9ac008be7670e3bdad4af",
-      "size": 9743
+      "path": "backend/src/db.ts",
+      "sha256": "89945791167cf7530a5cd374826eb16f0cdc215a78aef218e0f963f54cffc82d",
+      "size": 13347
     },
     {
       "category": "source",
-      "extension": "js",
-      "language": "javascript",
+      "extension": "ts",
+      "language": "typescript",
       "parseStatus": "parsed",
-      "path": "backend/src/errors.js",
-      "sha256": "9ecb63cbcd44bd4f3d443b2cbce061e3f9b2ff78ea894e592aa43b6e0754d78e",
-      "size": 747
+      "path": "backend/src/errors.ts",
+      "sha256": "e8081f7c6b8a98be1ca505f32b7c856b2fab1b042366da9f34a3c27bd7c42321",
+      "size": 991
     },
     {
       "category": "source",
-      "extension": "js",
-      "language": "javascript",
+      "extension": "ts",
+      "language": "typescript",
       "parseStatus": "parsed",
-      "path": "backend/src/routes/auth.js",
-      "sha256": "64d66bb6677b1924b3b47d872757269ad535b163ea01434c8450b69400f04ba4",
-      "size": 6500
+      "path": "backend/src/routes/auth.ts",
+      "sha256": "6ebf58c3f2113b7a3387df9a30e4c27c68ec1b4da3bf6967d97f52f24250f245",
+      "size": 9120
     },
     {
       "category": "source",
-      "extension": "js",
-      "language": "javascript",
+      "extension": "ts",
+      "language": "typescript",
       "parseStatus": "parsed",
-      "path": "backend/src/routes/feed.js",
-      "sha256": "b75dc1f25507a98d8ef17b3ba85dbfb6ecf81d2b6ce818e1a94d8e1c72db7326",
-      "size": 8523
+      "path": "backend/src/routes/feed.ts",
+      "sha256": "ea94ad325b6ee6a2069c4d783b591f216688cbddb426067a2b365a6f2949e2db",
+      "size": 11717
     },
     {
       "category": "source",
-      "extension": "js",
-      "language": "javascript",
+      "extension": "ts",
+      "language": "typescript",
       "parseStatus": "parsed",
-      "path": "backend/src/routes/planning.js",
-      "sha256": "bd894f1fb76cde1c2ffb9a4f1d98919db26b38e92854fc9274d7fd194b3e64ad",
-      "size": 3592
+      "path": "backend/src/routes/planning.ts",
+      "sha256": "bbd97e9a7bf9651b51808020758e0381d38602c3cc7a5d91eb78c6c159b6f00d",
+      "size": 5317
     },
     {
       "category": "source",
-      "extension": "js",
-      "language": "javascript",
+      "extension": "ts",
+      "language": "typescript",
       "parseStatus": "parsed",
-      "path": "backend/src/routes/recipeSerialiser.js",
-      "sha256": "a55cb59b3c2eb7af3e1193d51426e80c43f341df858eda00cd6be06fbe57009e",
-      "size": 1702
+      "path": "backend/src/routes/recipeSerialiser.ts",
+      "sha256": "a0932d2dc068592202eb5aa4a6a01b9e9be1e68fe84ae3e610809089c03e9cdf",
+      "size": 1888
     },
     {
       "category": "source",
-      "extension": "js",
-      "language": "javascript",
+      "extension": "ts",
+      "language": "typescript",
       "parseStatus": "parsed",
-      "path": "backend/src/routes/recipes.js",
-      "sha256": "1836e644140fbbb78814794fbae64cd77b81cd845bc053ae66303daf82f91abf",
-      "size": 4538
+      "path": "backend/src/routes/recipes.ts",
+      "sha256": "e009f78fc1dbab1e4fd21ab6e4ee5ca2fb38fac40d2019f98a6d5a75ecbc55b4",
+      "size": 5549
     },
     {
       "category": "source",
-      "extension": "js",
-      "language": "javascript",
+      "extension": "ts",
+      "language": "typescript",
       "parseStatus": "parsed",
-      "path": "backend/src/seed.js",
-      "sha256": "3753b768a560361990fe6932f29aba97e34edb97bc398b70588deb099d23a073",
-      "size": 12542
+      "path": "backend/src/seed.ts",
+      "sha256": "fee3ff5606ff6bf1e43b91184ffe4c90c60296bece7bf38ba6856eed983b0b69",
+      "size": 13539
     },
     {
       "category": "source",
-      "extension": "js",
-      "language": "javascript",
+      "extension": "ts",
+      "language": "typescript",
       "parseStatus": "parsed",
-      "path": "backend/src/server.js",
-      "sha256": "7ec5e25391ed3c963050c5479981f1456f91915ab840fad4ed8b8477f350f0e3",
-      "size": 2303
+      "path": "backend/src/server.ts",
+      "sha256": "8756641628b136e2daed0f17dc507b12353566e116e2509bf4535214a362904c",
+      "size": 2620
     },
     {
       "category": "source",
-      "extension": "js",
-      "language": "javascript",
+      "extension": "ts",
+      "language": "typescript",
       "parseStatus": "parsed",
-      "path": "backend/src/shoppingList.js",
-      "sha256": "986264e25ab757019a6aaf033cb654634af1d8f189ab13467ce25a2aef2905ae",
-      "size": 2402
+      "path": "backend/src/shoppingList.ts",
+      "sha256": "62a3f590c6269a68f0cd755251a75d1ef362de4555d87829942fa8251a0e5233",
+      "size": 2561
     },
     {
       "category": "source",
-      "extension": "js",
-      "language": "javascript",
+      "extension": "ts",
+      "language": "typescript",
       "parseStatus": "parsed",
-      "path": "backend/src/validators.js",
-      "sha256": "1e8c5249a8ac92cd6075ef559022c8d32cef8c2490ad793ca87e0973ef8a0179",
-      "size": 6089
+      "path": "backend/src/types/api.ts",
+      "sha256": "9fda251e5898e2b4899335761c573bebbf888861c10b7b322a0c843d93fe1a6c",
+      "size": 2326
     },
     {
       "category": "source",
-      "extension": "js",
-      "language": "javascript",
+      "extension": "ts",
+      "language": "typescript",
       "parseStatus": "parsed",
-      "path": "backend/src/vocabularies.js",
-      "sha256": "b542326857e304ab210c1240d60ada1ce95ae46ba6f8db73f65c0b8f3572da0b",
-      "size": 2222
+      "path": "backend/src/types/domain.ts",
+      "sha256": "8f5e4b659cf65805aeb2f62e8b965bbf82ef382e879e9dfbae1df8aa586f2b82",
+      "size": 3119
+    },
+    {
+      "category": "source",
+      "extension": "ts",
+      "language": "typescript",
+      "parseStatus": "parsed",
+      "path": "backend/src/validators.ts",
+      "sha256": "5a87aeeb75f62e69d7d8f76f2dc992ff466b87e1f051b4fc9a9d2f399ee6bd88",
+      "size": 9029
+    },
+    {
+      "category": "source",
+      "extension": "ts",
+      "language": "typescript",
+      "parseStatus": "parsed",
+      "path": "backend/src/vocabularies.ts",
+      "sha256": "b5803acb18b9732409b22e37236c515be5717ffa10ddf6281fb1bc294cb70150",
+      "size": 2448
+    },
+    {
+      "category": "configuration",
+      "extension": "json",
+      "language": "json",
+      "parseStatus": "unsupported",
+      "path": "backend/tsconfig.json",
+      "sha256": "1771b252fd6bd0bbe7fa7a723fc26fc6a2338c63dd7389e9b99c67730a265d80",
+      "size": 844
     },
     {
       "category": "documentation",
@@ -290,7 +317,7 @@
   "modules": [],
   "project": {
     "name": "Gestor Recetas Cocina",
-    "summary": "Proyecto Gestor Recetas Cocina basado en Express, npm, con 31 archivos indexados.",
+    "summary": "Proyecto Gestor Recetas Cocina basado en Express, npm, TypeScript, con 34 archivos indexados.",
     "summarySource": "structure"
   },
   "scannerVersion": "1.2.0",
@@ -304,7 +331,7 @@
     },
     "schemaVersion": "1.0"
   },
-  "snapshotId": "dfa94f0a1e7111bd748169c68ad5c507c9ab12361ac88196c74af71f8e6490d7",
+  "snapshotId": "9887f23ba8988f45c3fa957e1db2ede0564208d23f233b02964733d9043dba2e",
   "technologies": [
     {
       "evidence": [
@@ -319,6 +346,14 @@
       ],
       "id": "npm",
       "name": "npm"
+    },
+    {
+      "evidence": [
+        "backend/package.json dependency typescript",
+        "backend/tsconfig.json exists"
+      ],
+      "id": "typescript",
+      "name": "TypeScript"
     }
   ]
 }

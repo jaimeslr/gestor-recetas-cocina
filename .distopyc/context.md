@@ -6,12 +6,12 @@
 ## Project
 
 - Name: Gestor Recetas Cocina
-- Snapshot: dfa94f0a1e7111bd748169c68ad5c507c9ab12361ac88196c74af71f8e6490d7
+- Snapshot: 9887f23ba8988f45c3fa957e1db2ede0564208d23f233b02964733d9043dba2e
 - Scanner: 1.2.0
 
 ## Summary
 
-Proyecto Gestor Recetas Cocina basado en Express, npm, con 31 archivos indexados.
+Proyecto Gestor Recetas Cocina basado en Express, npm, TypeScript, con 34 archivos indexados.
 
 - Source: detected project structure
 
@@ -19,6 +19,7 @@ Proyecto Gestor Recetas Cocina basado en Express, npm, con 31 archivos indexados
 
 - Express: backend/package.json dependency express
 - npm: backend/package-lock.json exists
+- TypeScript: backend/package.json dependency typescript; backend/tsconfig.json exists
 
 ## Applications / Workspaces
 
@@ -34,16 +35,16 @@ Proyecto Gestor Recetas Cocina basado en Express, npm, con 31 archivos indexados
 
 ## Structural Overview
 
-- Internal file dependencies: 50
+- Internal file dependencies: 65
 - External package dependencies: 12
 - Unresolved imports: 2
 
 ## Index Statistics
 
-- Files: 31
-- Source files: 24
+- Files: 34
+- Source files: 26
 - Tests: 0
-- Symbols: 216
+- Symbols: 281
 
 ## Diagnostics
 
